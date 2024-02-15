@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # boards orm 설정
+    "boards.apps.BoardsConfig",
+    # users orm 설정
+    "users.apps.UsersConfig"
 ]
 
 MIDDLEWARE = [
