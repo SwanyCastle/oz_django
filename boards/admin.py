@@ -5,7 +5,7 @@ from .models import Board
 
 @admin.register(Board)
 class BoardAdmin(admin.ModelAdmin):
-    list_display = ('title', 'writer', 'date', 'likes', 'content')
+    list_display = ('title', 'writer', 'date', 'likes', 'content', "updated_at", "created_at")
     list_filter = ('date', 'writer', )
     search_fields = ('title', 'content')
     ordering = ('-date', )

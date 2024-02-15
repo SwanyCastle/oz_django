@@ -1,12 +1,8 @@
 from django.db import models
+from common.models import CommonModel
 
-# Create your models here.
 
-# 게시글
-# - title
-# - content
-
-class Board(models.Model):
+class Board(CommonModel):
     title = models.CharField(max_length=30)
     content = models.TextField()
     writer = models.CharField(max_length=30)
