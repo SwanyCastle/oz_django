@@ -1,0 +1,9 @@
+<!-- <h1>Show All Feed</h1> -->
+
+<h1>{{content}}</h1>
+
+<ul>
+    {% for feed in feeds %} 
+        <li>{{ feed.content }}</li> 
+    {% endfor %} 
+</ul>
