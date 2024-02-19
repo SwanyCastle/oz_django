@@ -27,11 +27,11 @@ urlpatterns = [
     path("login/simpleJWT/verify", TokenVerifyView.as_view()),
 ]
 
-# login json data
+# login 정보
 # {
 #     "username": "seunghwan",
 #     "password": "pw123"
 # }
 
-# login check token
+# login 시 발생된 토큰
 # eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJzZXVuZ2h3YW4ifQ.hN5pMS04KBNoQ07oE3_U3wc2vbtyc8aEo7auuDNr5F0
