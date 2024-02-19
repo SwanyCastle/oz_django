@@ -14,8 +14,8 @@ urlpatterns = [
 
     # Authentication
     path('getToken',obtain_auth_token), # DRF Token
-    path('login',views.Login.as_view()), #Django Session Login
-    path('logout',views.Logout.as_view()), #Django Session Logout
+    path('login',views.Login.as_view()), # Django Session Login
+    path('logout',views.Logout.as_view()), # Django Session Logout
 
     # JWT Authentication
     path('login/jwt', views.JWTLogin.as_view()), # JWT Token
