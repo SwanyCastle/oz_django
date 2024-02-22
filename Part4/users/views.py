@@ -126,3 +126,7 @@ class UserDetailView(APIView):
             "id": user.id,
             "username": user.username
         })
+    
+
+
+#### gggg
