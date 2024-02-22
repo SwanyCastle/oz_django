@@ -127,6 +127,3 @@ class UserDetailView(APIView):
             "username": user.username
         })
     
-
-
-#aaaaaa
