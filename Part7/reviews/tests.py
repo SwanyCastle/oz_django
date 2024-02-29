@@ -13,6 +13,7 @@ class ReviewAPITestCase(APITestCase):
         refresh = RefreshToken.for_user(self.user)
         self.token = str(refresh.access_token)
         self.client.credentials(HTTP_AUTHORIZATION=f'Bearer {self.token}')
+        
         # Feed Model 
         self.feed = Feed.objects.create(user=self.user, content='Test Feed')
 
